@@ -4,7 +4,7 @@ import PortfolioApp from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <PortfolioApp />,
+  <PortfolioApp/>,
   document.getElementById('root')
 );
 
