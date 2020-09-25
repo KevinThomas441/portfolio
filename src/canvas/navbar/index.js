@@ -23,9 +23,9 @@ const NavBar = () => {
     return (
     <Toolbar>
         <Avatar alt="Kevin Thomas" src = "/assets/kevin.png" />
-        <Typography classes = {{root:classes.title}}>
+        {/* <Typography classes = {{root:classes.title}}>
             Kevin Thomas
-        </Typography>
+        </Typography> */}
         <div className = {classes.fillSpace}></div>
         <NavLink url="#" label="about" active/>
         <NavLink url="#" label="projects"/>

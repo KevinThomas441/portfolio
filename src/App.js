@@ -5,9 +5,8 @@ import Header from './canvas/header';
 
 function PortfolioApp() {
   return (
-    
     <BaseLayout navigation = {<NavBar />}>
-      <Header />
+      <Header title="Kevin Thomas" caption="Software Development | Machine Learning | Data science"/>
     </BaseLayout>
   );
 }
