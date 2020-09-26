@@ -9,7 +9,7 @@ const useStyles = makeStyles(
       },
       main: {
           minHeight: 440,
-          background: "#D6CBC1",
+          background: "#9191E9",
           color:"#B01307",
           padding: theme.spacing(2, 4),
           borderRadius: theme.spacing(4)

@@ -8,7 +8,7 @@ const useStyles = makeStyles(
           display:"flex",
           flexdirection:"row",
           alignitems:"center",
-          minimumheight:360
+          minimumheight: 440
       },
       avatar: {
           marginRight: theme.spacing(4),
@@ -33,7 +33,7 @@ const Header = ({ title, caption }) => {
                     <Avatar alt="Kevin Thomas" classes={{ root: styles.avatar }} src = "./assets/kevin.png" />
                     <Box>
                         <Typography variant="h3">{title}</Typography>
-                        <Typography variant="h5">{caption}</Typography>
+                        <Typography variant="body1">{caption}</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={11} classes={{ root: styles.aboutlink }}>
