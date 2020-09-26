@@ -5,27 +5,25 @@ import { makeStyles } from '@material-ui/core'
 const useStyles = makeStyles(
     (theme) => ({
       root: {
-          mainTop: theme.spacing(4)
+        mainTop: theme.spacing(4)
       },
       main: {
           minHeight: 440,
           background: "#9191E9",
-          color:"#FFFFFF",
-          padding: theme.spacing(2, 4)
+          color:"#B01307"
       }
     }),
     { index: 1 }
   );
 
-const Projects = () => {
+const About = () => {
     const styles = useStyles()
     return (
-        <Grid item classes={{ root:styles.root }} component="section" id="projects">
+        <Grid item classes={{ root:styles.root }} component="section" id="about">
             <Paper classes={{ root:styles.main}} square elevation={0}>
-                <Typography variant="h3">Projects</Typography>
-                <Typography variant="body1">subtitle</Typography>
+                <Typography variant="body1">About</Typography>
             </Paper>
         </Grid>
     );
 }
-export default Projects;
+export default About;

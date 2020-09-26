@@ -21,7 +21,7 @@ const Experience = () => {
     return (
         <Grid item classes={{ root:styles.root }} component="section" id="experience">
             <Paper classes={{ root:styles.main}} square elevation={0}>
-                <Typography variant="h3">title</Typography>
+                <Typography variant="h3">Experience</Typography>
                 <Typography variant="body1">subtitle</Typography>
             </Paper>
         </Grid>

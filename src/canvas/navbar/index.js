@@ -25,10 +25,10 @@ const NavBar = () => {
             Kevin
         </Typography>
         <div className = {classes.fillSpace}></div>
-        <NavLink url="#about" label="about" active/>
         <NavLink url="#projects" label="projects"/>
         <NavLink url="#skills" label="skills"/>
         <NavLink url="#experience" label="experience"/>
+        <NavLink url="#about" label="about"/>
         <div className = {classes.fillSpace}></div>
         <Avatar alt="LinkedIn" src = "/assets/kevin.png" className={classes.small}/>
         <Avatar alt="Github" src = "/assets/kevin.png" className={classes.small}/>
