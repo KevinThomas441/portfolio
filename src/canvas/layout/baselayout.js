@@ -15,9 +15,9 @@ const BaseLayout = ({ navigation, children, footer }) => {
     const classes = useStyle();
     return <React.Fragment>
         <CssBaseline />
-        <Grid container classes = {{root: classes.root}}>
+        <Grid container classes = {{root: classes.root}} direction="column" wrap="nowrap">
             <Grid item>{navigation}</Grid>
-            <Grid item xs>{children}</Grid>
+            {children}
             <Grid item>{footer}</Grid>
         </Grid>
     </React.Fragment>
