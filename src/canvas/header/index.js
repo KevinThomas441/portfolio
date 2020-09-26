@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Avatar, Box, Typography } from '@material-ui/core';
+import { Grid, Avatar, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(
@@ -14,6 +14,11 @@ const useStyles = makeStyles(
           marginRight: theme.spacing(4),
           height:128,
           width:128
+      },
+      aboutlink: {
+          justifyContent: "flex-end",
+          display: "flex",
+          textDecoration: "none"
       }
     }),
     { index: 1 }
@@ -25,11 +30,14 @@ const Header = ({ title, caption }) => {
         <Grid item>
             <Grid container component="header" justify="center">
                 <Grid item xs={11} md={6} classes={{ root: styles.root }}>
-                    <Avatar alt="Kevin Thomas" classes={{ root: styles.avatar }} src = "/assets/kevin.png" />
+                    <Avatar alt="Kevin Thomas" classes={{ root: styles.avatar }} src = "./assets/kevin.png" />
                     <Box>
                         <Typography variant="h3">{title}</Typography>
                         <Typography variant="h5">{caption}</Typography>
                     </Box>
+                </Grid>
+                <Grid item xs={11} classes={{ root: styles.aboutlink }}>
+                    <Link underline="none" href="#about">more about me</Link>
                 </Grid>
             </Grid>
         </Grid>
