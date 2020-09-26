@@ -22,13 +22,15 @@ const useStyles = makeStyles(
 const Header = ({ title, caption }) => {
     const styles = useStyles()
     return (
-        <Grid container component="header" justify="center">
-            <Grid item xs={11} md={6} classes={{ root: styles.root }}>
-                <Avatar alt="Kevin Thomas" classes={{ root: styles.avatar }} />
-                <Box>
-                    <Typography variant="h3">{title}</Typography>
-                    <Typography variant="h5">{caption}</Typography>
-                </Box>
+        <Grid item>
+            <Grid container component="header" justify="center">
+                <Grid item xs={11} md={6} classes={{ root: styles.root }}>
+                    <Avatar alt="Kevin Thomas" classes={{ root: styles.avatar }} src = "/assets/kevin.png" />
+                    <Box>
+                        <Typography variant="h3">{title}</Typography>
+                        <Typography variant="h5">{caption}</Typography>
+                    </Box>
+                </Grid>
             </Grid>
         </Grid>
     )
