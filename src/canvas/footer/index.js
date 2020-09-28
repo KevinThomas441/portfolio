@@ -8,7 +8,7 @@ const useStyles = makeStyles(
         mainTop: theme.spacing(4)
       },
       main: {
-          minHeight: 440,
+          minHeight: 100,
           background: "#9191E9",
           color:"#B01307"
       }

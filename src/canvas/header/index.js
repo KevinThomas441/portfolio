@@ -6,9 +6,9 @@ const useStyles = makeStyles(
     (theme) => ({
       root: {
           display:"flex",
-          flexdirection:"row",
-          alignitems:"center",
-          minimumheight: 440
+          flexDirection:"row",
+          alignItems:"center",
+          minHeight: 700
       },
       avatar: {
           marginRight: theme.spacing(4),

@@ -1,14 +1,15 @@
 import React from 'react';
-import { Grid, makeStyles, CssBaseline } from '@material-ui/core';
+import { Grid, makeStyles, CssBaseline, ThemeProvider, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 
+const theme = createMuiTheme
 
 const useStyle = makeStyles((theme) =>({
     root: {
         flexGrow: 1,
         flexDirection: "column",
         minHeight: "100vh"
-}
-})
+        }
+    })
 );
 
 const BaseLayout = ({ navigation, children, footer }) => {
@@ -17,7 +18,7 @@ const BaseLayout = ({ navigation, children, footer }) => {
         <CssBaseline />
         <Grid container classes = {{root: classes.root}} direction="column" wrap="nowrap">
             <Grid item>{navigation}</Grid>
-            {children}
+                {children}
             <Grid item>{footer}</Grid>
         </Grid>
     </React.Fragment>
